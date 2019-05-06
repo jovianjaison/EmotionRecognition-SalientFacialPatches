@@ -122,6 +122,9 @@ cv2.waitKey(1000)
 cv2.imshow('image',equ)
 cv2.waitKey(1000)
 
+#Salient Patches
+
+
 center=0
 for i in range(len(eyes_x)):
 	center=center+eyes_c[i][0]
@@ -193,6 +196,4 @@ th2 = cv2.adaptiveThreshold(blur,255,cv2.ADAPTIVE_THRESH_MEAN_C,\
             cv2.THRESH_BINARY,11,2)
 cv2.imshow('image',th2)
 cv2.waitKey(5000)
-
-#Salient Patches
 
